@@ -1,6 +1,8 @@
 import 'dart:developer';
-
+import 'package:counter_7/formTambahBudget.dart';
 import 'package:flutter/material.dart';
+import 'package:counter_7/data_budget.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -77,6 +79,46 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+            ),
+            ListTile(
+              title: const Text('counter_7'),
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          const MyHomePage(title: 'Flutter Demo Page')),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Form Tambah Budget'),
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const formTambahBudget()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Data Budget Page'),
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const dataBudget()),
+                );
+              },
+            ),
+          ],
+        ),
+    ),
       body: Container(
         padding: const EdgeInsets.all(10),
         child: 
