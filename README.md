@@ -52,3 +52,52 @@ Jawab :
 - Menambahkan logic pada bagian button decrement bahwa hanya muncul ketika nilai counter lebih dari 0. Jadi ketika _counter <= 0, maka akan di hide buttonnya
 - membuat Text untuk changecolor untuk mengecek nilai ketika dia ganjil atau genap dengan menggunakan modulo dan langsung mengubah textnya dan juga memberi warna pada text dengan bir dan merah sesuai ganjil dan genap.
 - menjaankan aplikasi flutter run di terminal
+
+# -------------------------------------------------------------------------------
+# Read Me Tugas 8 
+
+<br>Nama : Adly Renadi Raksanagara</br>
+<br>NPM : 2106752306</br>
+<br>Kelas : PBP A</br>
+
+## <br>1. Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.</br>
+ 
+ <br>`Navigator.push`</br>
+ - <p>Navigator.push adalah sebuah navigator routing dimana dia akan menambahkan page pada top of stack saja.</p>
+ <br>`Navigator.pushReplacement`</br>
+ - Navigator.pushReplacement adalah  sebuah navigator routing yang akan menghapus page paling atas, lalu menambahkan page yang akan di routing artinya dia mengganti page pada urutan top of stack menjadi page yang baru akan di route.
+
+## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+`MaterialApp`
+- <p>menyediakan style bawaan dari parent</p>
+`Scaffold`
+- <p>implementasi dari material untuk struktur layout</p>
+`Card`
+- <p>styling bawaan dari material yang akan membentuk sebuah card</p>
+`Text`
+- <p>menampilkan text</p>
+`ListView.builder`
+- <p>menampilkan list of children</p>
+`TextStyling`
+- <p>memberikan styling pada widget text</p>
+`Center`
+- <p>memposisikan widget berada di tengah-tengah</p>
+`Drawer`
+- <p>sebuah list yang berisikan daftar navigasi</p>
+`DropDownButton`
+- <p>menyediakan pilihan input dengan pilihan salah satu saja</p>
+
+
+## 3. Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+<br>1. `onPressed`</br>
+<br>2. `onClick`</br>
+<br>3. `onChanged`</br>
+<br>4. `onSaved`</br>
+<br>5. `onHover`</br>
+
+## 4. Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+<br><p>Navigator dalam flutter memiliki cara kerja dengan prinsip stack dalam mengganti halaman. Halaman yang akan dimuat akan di-push pada top of stack, sedangkan jika ingin berpindah ke halaman sebelumnya, Navigator akan melakukan pop pada stack, sehingga page yang saat ini dilihat akan dihapus dari stack dan tampilan pengguna akan berganti ke halaman sebelumnya.</p></br>
+## 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- membuat class formTambahBudget.dart dan data_budget sebgai form mengisi data yang datannhya di tampilkan dalam class data_budget.dart
+- menambahkan drawer pada setiap page untuk berpindah pindah halaman
+- membuat folder model dan membuat class final_budget.dart untuk menjadi model dari budget
