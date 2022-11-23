@@ -1,3 +1,4 @@
+import 'package:counter_7/data_watchlist.dart';
 import 'package:counter_7/main.dart';
 import 'package:counter_7/formTambahBudget.dart';
 import 'package:flutter/material.dart';
@@ -51,6 +52,17 @@ class _dataBudgetState extends State<dataBudget> {
                   context,
                   MaterialPageRoute(
                       builder: (context) => const dataBudget()),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('My Watch List'),
+              onTap: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          const data_watchlist()),
                 );
               },
             ),
