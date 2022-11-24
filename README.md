@@ -101,3 +101,46 @@ Jawab :
 - membuat class formTambahBudget.dart dan data_budget sebgai form mengisi data yang datannhya di tampilkan dalam class data_budget.dart
 - menambahkan drawer pada setiap page untuk berpindah pindah halaman
 - membuat folder model dan membuat class final_budget.dart untuk menjadi model dari budget
+
+# -------------------------------------------------------------------------------
+# Read Me Tugas 9 
+
+<br>Nama : Adly Renadi Raksanagara</br>
+<br>NPM : 2106752306</br>
+<br>Kelas : PBP A</br>
+
+## <br>1. Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?</br>
+
+ <p>Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Hal ini terjadi karena pengambilan data JSON dapat dilakukan tanpa membuat sebuah class model dengan memanggil function `jsonDecode()`. Karena pada function `jsonDecode()` akan mengembalikan sebuah Map<String, dynamic> diman kita tidak mengetahui tipe datannya sebelum di jalankan. Maka dari itu, dapat membuat kode menjadi rentan terhadap error  dan lebih dihindari untuk penggunaan pengambilan data JSON tanpa membuat model terlelbih dahulu.</p>
+
+
+## 2. Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+`RichText`
+- <p>widget ini digunakan untuk styling text agar dapat menambahkan lebih dari 2 text dalam sekali penulisan </p>
+`TextSpan`
+- <p>Widget ini merupakan child dari RichText yang digunakan untuk menaruh text dan mengubah style dari text tsb.</p>
+`Card`
+- <p>styling bawaan dari material yang akan membentuk sebuah card</p>
+`Text`
+- <p>menampilkan text</p>
+`ListView.builder`
+- <p>menampilkan list of children</p>
+`TextStyling`
+- <p>memberikan styling pada widget text</p>
+`Center`
+- <p>memposisikan widget berada di tengah-tengah</p>
+`Drawer`
+- <p>sebuah list yang berisikan daftar navigasi</p>
+`Padding`
+- <p>untuk mengatur padding dari widget lainnya</p>
+
+## 3. Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+<p>Pertama, membuat model terlebih dahulu untuk mendefinisikan data dari JSON. Selanjutnya, kita melakukan pemanggilan fungsi http.get dan harus menaruh imoprt. Setelah itu, dari data yang kita dapat akan disimpan dalam state (Future) dan menampilkan data tersebut dengan menggunakan FutureWidget karena result dari server menggunakan Future yang memberikan delay dalam pengambilan data</p>
+  
+## 4. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas..
+
+- menambahkan drawer pada setiap page untuk berpindah pindah halaman
+- menambahkan file `mywawatchlis.dart` kedalam folder model yang berisi model untuk data_watchlist
+-  membuat view page dari model yang sudah kita buat sesuai spesifikasi yang tertera di soal
